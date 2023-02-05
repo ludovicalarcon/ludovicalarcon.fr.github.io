@@ -1,0 +1,9 @@
+- name: Accueil
+  link: /
+  target: _self
+- name: Catégories
+  link: /categories
+  target: _self
+- name: Github
+  link: https://github.com/ludovicalarcon
+  target: _blank

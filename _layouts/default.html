@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="{{ site.logo-path | prepend: site.baseurl }}"/>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+    <title>{{ site.author.name }} - {{ page.title }}</title>
+    {% seo title=false %}
+</head>
+<body>
+    {% include navbar.html %}
+    <section id="about" class="container-fluid">
+        <div class="col-md-8 col-lg-4 profile-picture">
+            <img src="{{site.baseurl}}/assets/images/me.jpg" alt="Ludovic Alarcon" class="rounded-circle">
+        </div>
+        <div class="heading">
+            <h1>Ludovic Alarcon <span class="blue-font" id="name-size">.</span></h1>
+            <div id="blue-divider-about"></div>
+            <h3>Passioné par Kubernetes, les technologies Cloud et le DevOps <span class="blue-font" id="separator-size">-</span> Développeur Golang et Dotnet</h3>
+        </div>
+        <div class="rs">
+            <a href="https://www.linkedin.com/in/ludovic-alarcon/" target="_blank">
+                <span class="fab fa-linkedin" aria-hidden="true"></span>
+            </a>
+            <a href="https://github.com/ludovicalarcon" target="_blank">
+                <span class="fab fa-github" aria-hidden="true"></span>
+            </a>
+            <a href="https://twitter.com/alarco_l?lang=en" target="_blank">
+                <span class="fab fa-twitter" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+    {{ content }}
+
+    {% include footer.html %}
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

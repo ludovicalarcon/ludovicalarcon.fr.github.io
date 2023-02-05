@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="card-article card" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="categories">
+    {% for tag in page.tags %}
+        <a class="post-tag" href="{{site.baseurl}}/categories#{{tag}}">{{ tag }}</a>
+    {% endfor %}
+    </div>
+    <div class="card-body" itemprop="articleBody">
+        <h1 class="card-post-title" itemprop="name headline">{{ page.title }}</h1>
+        <div class="post-date"><span>{{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        {{ content }}
+    </div>
+</article>

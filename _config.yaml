@@ -1,0 +1,38 @@
+permalink: ':title/'
+
+logo-path: "/assets/images/logo1.png"
+baseurl: ""
+
+author:
+  name: "Ludovic Alarcon"
+  twitter: alarco_l
+  image: me.jpg
+twitter:
+  username: alarco_l
+  card: summary_large_image
+social:
+  name: "Ludovic Alarcon"
+  links:
+    - https://twitter.com/alarco_l
+    - https://www.linkedin.com/in/ludovic-alarcon
+    - https://github.com/ludovicalarcon
+description: Ludovic Alarcon Blog pour parler principalement de Kubernetes et du Cloud
+
+sass:
+  sass_dir: assets/css
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class : 'syntax'
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+paginate: 10
+paginate_path: "/page/:num"
