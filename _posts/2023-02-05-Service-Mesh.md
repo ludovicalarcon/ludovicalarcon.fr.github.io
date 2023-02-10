@@ -10,7 +10,7 @@ Il s'occupe de router toutes les communications inter-service au travers d'un pr
 J'espère que cette suite de billets sera utile pour votre voyage au pays des services mesh.
 
 - __Un Service Mesh c'est quoi ?__
-- Istio (A venir)
+- [Istio]({% post_url 2023-02-10-Istio %})
 
 ## Ce qu'apporte le service mesh
 
