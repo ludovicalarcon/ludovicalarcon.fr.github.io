@@ -63,7 +63,7 @@ Nous allons également ouvrir le port 80 pour tout les hosts (0.0.0.0/0) afin de
 
 Pour cela, nous allons aller dans Networking -> Virtual Cloud Networks -> your VCN -> Subnets -> public-subnet
 #### ![](/assets/images/2023-07-04-subnets.png)
-TPuis dans Security Lists -> Default Security List
+Puis dans Security Lists -> Default Security List
 #### ![](/assets/images/2023-07-04-securityLists.png)
 Et enfin sur Ingress Rules -> Add Ingress Rules
 #### ![](/assets/images/2023-07-04-ingressrules.png)
@@ -416,5 +416,8 @@ Après quelques minutes, notre LB est fin prêt.
 
 Nous avons maintenant un cluster Kubernertes `up & running` en utilisant uniquement le free tier d'Oracle.
 Ça nous fait quand même un jolie playground pour s'amuser sur tout ce qui touche à kube.
+
+Articles en rapport:
+- [Accéder à votre cluster kubernetes depuis votre machine avec tailscale]({% post_url 2023-07-12-Tailscale %})
 
 J'espère que cet article vous a été utile !
